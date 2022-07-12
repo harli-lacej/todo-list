@@ -34,13 +34,41 @@
 .h1-span-me{
     font-weight:lighter;
 }
-.todo-div{
+.todo-div-headline{
     margin: auto;
     width: 30%;
     padding:2px;
     color:var(--lightgrey);
     font-family: 'Montserrat', sans-serif;
     background-color:#414652;
-    border-radius:5px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-bottom: #C5C4C4 solid 2px;
+  }
+
+  .todo-div-addnew{
+    margin: auto;
+    width: 30%;
+    padding-top:3px;
+    padding-left:2px;
+    padding-right:2px;
+    padding-bottom:3px;
+    color:var(--lightgrey);
+    font-family: 'Montserrat', sans-serif;
+    background-color:#414652;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  #fname{
+    width:99%;
+    font-family: 'Montserrat', sans-serif;
+    height:30px;
+    font-size:18px;
+    background-color:#414652;
+    border:0px;
+    outline: 0;
+    caret-color:var(--red);
+    text-align: center;
+    color:var(--lightgrey);
   }
