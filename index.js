@@ -5,10 +5,14 @@ text_field.addEventListener("keypress", function(event) {
     console.log("Enter pressed");
     let block_to_insert = document.createElement('div');
     let text_to_insert = document.getElementById('fname').value;
-    block_to_insert.innerHTML = ''+text_field.value;
+    let text=block_to_insert.innerHTML = ''+text_field.value;
     block_to_insert.classList.add('todo-div-todo');
  
     let where_to_insert = document.getElementById('outer-div');
     where_to_insert.appendChild( block_to_insert );
+    
+    block_to_insert.onclick = function(){
+      text.toUpperCase();
+    }
   }
 });
