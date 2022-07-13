@@ -12,7 +12,10 @@ text_field.addEventListener("keypress", function(event) {
     where_to_insert.appendChild( block_to_insert );
     
     block_to_insert.onclick = function(){
-      text.toUpperCase();
+      block_to_insert.style.setProperty("text-decoration", "line-through");
+    }
+    block_to_insert.onmouseover = function(){
+      console.log("mouseover");
     }
   }
 });
