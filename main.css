@@ -1,3 +1,8 @@
+/*Title:Todo App using JS
+Author:Harli Lacej
+Date:13/7/2022*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 :root {
     --lightgrey:#C5C4C4;
@@ -100,5 +105,9 @@
     padding-bottom:5px;
   }
   .todo-div-todo *{
+    pointer-events: none;
+  }
+
+  .delete-todo{
     pointer-events: none;
   }

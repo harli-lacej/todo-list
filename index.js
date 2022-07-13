@@ -14,9 +14,12 @@ text_field.addEventListener("keypress", function(event) {
     let where_to_insert = document.getElementById('outer-div');
     where_to_insert.appendChild( block_to_insert );
     
-    block_to_insert.onclick = function(){
+
+
+    block_to_insert.onclick = function(e){
       block_to_insert.style.setProperty("text-decoration", "line-through");
     }
+    
       block_to_insert.onmouseover = function(){
       let delete_div = document.createElement('div');
       let text=delete_div.innerHTML = '<i class="fa-solid fa-trash" style="color:white"></i>';
@@ -25,13 +28,13 @@ text_field.addEventListener("keypress", function(event) {
 
       let place_to_insert = document.getElementById(block_to_insert.id);
       place_to_insert.appendChild( delete_div );
-    }
-    delete_div.onclick=function(){
-      const element = document.getElementById("delete-div"+count+"");
-      element.remove();
 
-      const element2 = document.getElementById("div-created"+count+"");
-      element2.remove();
+      }
+  
+    
+      
     }
-  }
+
+    
+  
 });
