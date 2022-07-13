@@ -52,7 +52,6 @@
     width: 30%;
     padding-top:3px;
     padding-left:2px;
-    padding-right:2px;
     padding-bottom:3px;
     color:var(--lightgrey);
     font-family: 'Montserrat', sans-serif;
@@ -61,7 +60,7 @@
   }
 
   #fname{
-    width:99%;
+    width:98%;
     font-family: 'Montserrat', sans-serif;
     height:30px;
     font-size:18px;
@@ -76,14 +75,27 @@
 .todo-div-todo{
     margin: auto;
     width: 30%;
+    height:25px;
     padding-top:5px;
     padding-left:2px;
-    padding-right:2px;
-    padding-bottom:5px;
     color:var(--lightgrey);
     font-family: 'Montserrat', sans-serif;
     background-color:#414652;
     border-bottom-left-radius:5px;
     border-bottom-right-radius:5px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+ 
+  .delete-todo{
+    background-color: #FF6262;
+    width:20%;
+    height:25px;
+    position:sticky;
+    left:80%;
+    border-bottom-right-radius:5px;
+    display:inline;
+    padding-top:5px;
+    padding-left:8px;
+    padding-right:8px;
+    padding-bottom:5px;
   }
