@@ -3,7 +3,6 @@ let count = 0;
 text_field.addEventListener("keypress", function(event) {
   if(event.key === "Enter") {
     count++;
-    console.log(count);
     event.preventDefault();
     let block_to_insert = document.createElement('div');
     block_to_insert.id = "div-created"+count+"";
@@ -16,21 +15,29 @@ text_field.addEventListener("keypress", function(event) {
     
 
 
-    block_to_insert.onclick = function(e){
-      block_to_insert.style.setProperty("text-decoration", "line-through");
+    
+    
+    block_to_insert.onmouseover = function(){
+    delete_div = document.createElement('div');
+    let text=delete_div.innerHTML = '<i class="fa-solid fa-trash" style="color:white"></i>';
+    delete_div.classList.add('delete-todo');
+    delete_div.id = "delete-div"+count+"";
+
+    let place_to_insert = document.getElementById(block_to_insert.id);
+    place_to_insert.appendChild( delete_div );
+
+    id_of_div = delete_div.id;
+    console.log(id_of_div);
+    
     }
     
-      block_to_insert.onmouseover = function(){
-      let delete_div = document.createElement('div');
-      let text=delete_div.innerHTML = '<i class="fa-solid fa-trash" style="color:white"></i>';
-      delete_div.classList.add('delete-todo');
-      delete_div.id = "delete-div"+count+"";
 
-      let place_to_insert = document.getElementById(block_to_insert.id);
-      place_to_insert.appendChild( delete_div );
-
-      }
   
+    block_to_insert.onclick = function(){
+    block_to_insert.style.setProperty("text-decoration", "line-through");
+    }
+    
+    
     
       
     }
