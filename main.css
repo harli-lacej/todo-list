@@ -119,5 +119,9 @@ html {
 
 #iconplus{
   --fa-animation-duration: 5s;
-  color:#FF6262
+  color:#FF6262;
+  margin-left:17em;
+}
+h3{
+  margin-left:1em;
 }
