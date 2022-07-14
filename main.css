@@ -108,10 +108,16 @@ html {
   padding-right: 8px;
   padding-bottom: 5px;
 }
+
 .todo-div-todo * {
   pointer-events: none;
 }
 
 .delete-todo {
   pointer-events: none;
+}
+
+#iconplus{
+  --fa-animation-duration: 5s;
+  color:#FF6262
 }

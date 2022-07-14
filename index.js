@@ -13,8 +13,17 @@ text_field.addEventListener("keypress", function(event) {
     let where_to_insert = document.getElementById("outer-div");
     where_to_insert.appendChild(block_to_insert);
 
-    /*Code of onmouseover without delay:
-    block_to_insert.onmouseover = function() {
+    var delay = function(callback) {
+      var timeout = null;
+      block_to_insert.onmouseover = function() {
+        timeout = setTimeout(callback, 500);
+      };
+      block_to_insert.onmouseout = function() {
+        clearTimeout(timeout);
+      };
+    };
+
+    delay(function() {
       delete_div = document.createElement("div");
       let text = (delete_div.innerHTML =
         '<i class="fa-solid fa-trash" style="color:white"></i>');
@@ -23,28 +32,7 @@ text_field.addEventListener("keypress", function(event) {
       let place_to_insert = document.getElementById(block_to_insert.id);
       place_to_insert.appendChild(delete_div);
       delete_div.id = "delete-div" + count + "";
-    };*/
-    var delay = function (callback) {
-      var timeout = null;
-      block_to_insert.onmouseover = function() {
-          timeout = setTimeout(callback,500);
-      };
-      block_to_insert.onmouseout = function() {
-          clearTimeout(timeout);
-      }
-  };
-  
-  
-  delay(function() {
-    delete_div = document.createElement("div");
-    let text = (delete_div.innerHTML =
-      '<i class="fa-solid fa-trash" style="color:white"></i>');
-    delete_div.classList.add("delete-todo");
-
-    let place_to_insert = document.getElementById(block_to_insert.id);
-    place_to_insert.appendChild(delete_div);
-    delete_div.id = "delete-div" + count + "";
-  });
+    });
 
     block_to_insert.onclick = function() {
       block_to_insert.style.setProperty("text-decoration", "line-through");
