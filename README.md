@@ -6,6 +6,6 @@ How to use it:
 
 -To delete a todo, you must have the mouse over a todo and double-click on the displayed symbol.
 
--To call a todo complete, simply click once on a todo and the text will be strike-through.
+-To strikethrough a todo, simply click once on a todo and the text will be strike-through.
 
 ![Todo-list Website](https://github.com/harli-lacej/todo-list/blob/main/img/todo.png)
