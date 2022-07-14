@@ -2,112 +2,116 @@
 Author:Harli Lacej
 Date:13/7/2022*/
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
 :root {
-    --lightgrey:#C5C4C4;
-    --red: #FF6262;
-    --bg:#424459;
-    --bg-white:
-  }
-  html {
-    min-height: 100%;
-    background-image: url(img/bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
- }
- 
-.logo-img{
-    width:80px;
-    height:80px;
+  --lightgrey: #c5c4c4;
+  --red: #ff6262;
+  --bg: #424459;
+  --bg-white: ;
 }
-.headline{
-    color:var(--lightgrey);
-    font-family: 'Montserrat', sans-serif;
-    font-weight:bold;
-    font-size:30px;
-    margin-top:0;
-    margin-left:10%;
-
-}
-.h1-span-dot{
-    color:var(--red);
-    font-size:40px;
+html {
+  min-height: 100%;
+  background-image: url(img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.h1-span-me{
-    font-weight:lighter;
+.logo-img {
+  width: 80px;
+  height: 80px;
 }
-.todo-div-headline{
-    margin: auto;
-    width: 30%;
-    padding:2px;
-    color:var(--lightgrey);
-    font-family: 'Montserrat', sans-serif;
-    background-color:#414652;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-bottom: #C5C4C4 solid 2px;
-  }
+.headline {
+  color: var(--lightgrey);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 0;
+  margin-left: 10%;
+}
+.h1-span-dot {
+  color: var(--red);
+  font-size: 40px;
+}
 
-  .todo-div-addnew{
-    margin: auto;
-    width: 30%;
-    padding-top:3px;
-    padding-left:2px;
-    padding-bottom:3px;
-    color:var(--lightgrey);
-    font-family: 'Montserrat', sans-serif;
-    background-color:#414652;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
+.h1-span-me {
+  font-weight: lighter;
+}
+.todo-div-headline {
+  margin: auto;
+  width: 30%;
+  padding: 2px;
+  color: var(--lightgrey);
+  font-family: "Montserrat", sans-serif;
+  background-color: #414652;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-bottom: #c5c4c4 solid 2px;
+}
 
-  #fname{
-    width:98%;
-    font-family: 'Montserrat', sans-serif;
-    height:30px;
-    font-size:18px;
-    background-color:#414652;
-    border:0px;
-    outline: 0;
-    caret-color:var(--red);
-    text-align: center;
-    color:var(--lightgrey);
-  }
+.todo-div-addnew {
+  margin: auto;
+  width: 30%;
+  padding-top: 3px;
+  padding-left: 2px;
+  padding-bottom: 3px;
+  color: var(--lightgrey);
+  font-family: "Montserrat", sans-serif;
+  background-color: #414652;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
-.todo-div-todo{
-    margin: auto;
-    width: 30%;
-    height:25px;
-    padding-top:5px;
-    padding-left:2px;
-    color:var(--lightgrey);
-    font-family: 'Montserrat', sans-serif;
-    background-color:#414652;
-    border-bottom-left-radius:5px;
-    border-bottom-right-radius:5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
- 
-  .delete-todo{
-    background-color: #FF6262;
-    width:20%;
-    height:25px;
-    position:sticky;
-    left:80%;
-    border-bottom-right-radius:5px;
-    display:inline;
-    padding-top:5px;
-    padding-left:8px;
-    padding-right:8px;
-    padding-bottom:5px;
-  }
-  .todo-div-todo *{
-    pointer-events: none;
-  }
+#fname {
+  width: 98%;
+  font-family: "Montserrat", sans-serif;
+  height: 30px;
+  font-size: 18px;
+  background-color: #414652;
+  border: 0px;
+  outline: 0;
+  caret-color: var(--red);
+  text-align: center;
+  color: var(--lightgrey);
+}
 
-  .delete-todo{
-    pointer-events: none;
-  }
+.todo-div-todo {
+  margin: auto;
+  width: 30%;
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 2px;
+  color: var(--lightgrey);
+  font-family: "Montserrat", sans-serif;
+  background-color: #414652;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.delete-todo {
+  background-color: #ff6262;
+  width: 20%;
+  height: 25px;
+  position: sticky;
+  left: 80%;
+  border-bottom-right-radius: 5px;
+  display: inline;
+  padding-top: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+}
+.todo-div-todo * {
+  pointer-events: none;
+}
+
+.delete-todo {
+  pointer-events: none;
+}
